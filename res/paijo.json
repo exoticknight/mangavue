@@ -1,0 +1,52 @@
+{
+  "name": "ぱいじょ",
+  "author": "paiza",
+  "translator": "exoticknight",
+  "discription": "paiza.jp 连载的四格漫画。讲述入读 paiza 高等女学院的 3 人组的编程学院生活。版权归原作者所有，如有侵权，请联系本人，本人会第一时间删除处理。",
+  "pageCount": 1,
+  "catalog": [
+    { "text": "第一话", "value": 1}
+  ],
+  "content": [
+    {
+      "pics": [
+        {
+          "title": "朋友 100 人 increment",
+          "path": "https://i.imgur.com/3SaMJnB.jpg",
+          "alt": "1",
+          "style": {
+            "padding": "20px",
+            "font-size": "27px"
+          },
+          "areas": [
+            {
+              "coords": [545,90,791,406],
+              "text":"我叫雾岛京子\n明天开始就入读 paiza 女子学院高等部（简称 paiza 女高）啦！" },
+            {
+              "coords": [605,454,785,769],
+              "text":"paiza 女子学院是以培养优秀的工程师为目的的全部寄宿制学校" },
+            {
+              "coords": [17,455,198,771],
+              "text":"虽然喜欢编程\n但是能不能好好交到朋友让我很不安啊..." },
+            {
+              "coords": [677,807,795,1127],
+              "text":"好，写段代码来模拟一下吧..." },
+            {
+              "coords": [304,831,670,1006],
+              "text":"friend = 0\nif 遇到初次见面的同级生 then\n    我自动打招呼\n    friend += 1\nend while friend < 10",
+              "boxStyle":
+                {
+                  "writing-mode": "lr-tb",
+                  "background-color": "black",
+                  "color": "white",
+                  "font-size": "20px"}
+                },
+            {
+              "coords": [626,1174,792,1490],
+              "text":"喂\n你在宿舍房间前面干什么呀" }
+          ]
+        }
+      ]
+    }
+  ]
+}
