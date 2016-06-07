@@ -16,10 +16,8 @@ body
   font-family Helvetica, sans-serif
 
 #wrapper
-  float left
-  position relative
-  left 50%
+  text-align center
   #app
-    position relative
-    left -50%
+    display inline-block
+    text-align left
 </style>

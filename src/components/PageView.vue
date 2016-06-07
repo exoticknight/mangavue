@@ -1,6 +1,7 @@
 <template>
 <div class="page-view">
   <div v-if="!$loadingAsyncData" class="page-content">
+    <a v-link="{ name: 'book.catalog', params: { book: $route.params.book } }">返回目录</a>
     <div v-for="pic in content.pics">
       <h1 class="image-title">{{ pic.title }}</h1>
       <div class="image-content">
@@ -68,10 +69,10 @@ function transformContent ( content ) {
               area,
               {
                 'position': {
-                  left: area.coords[0] + 'px',
-                  top: area.coords[1] + 'px',
-                  width: area.coords[2] - area.coords[0] + 'px',
-                  height: area.coords[3] - area.coords[1] + 'px'
+                  left: Math.min( area.coords[0], area.coords[2] ) + 'px',
+                  top: Math.min( area.coords[1], area.coords[3] ) + 'px',
+                  width: Math.abs( area.coords[2] - area.coords[0] ) + 'px',
+                  height: Math.abs( area.coords[3] - area.coords[1] ) + 'px'
                 },
                 'style': Object.assign(
                   {},

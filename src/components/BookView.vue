@@ -4,6 +4,7 @@
   <p>原作：{{ author }}</p>
   <p>翻译：{{ translator }}</p>
   <p class="book-discription">{{ discription }}</p>
+  <a v-link="{ name: 'index' }">返回首页</a>
   <router-view :page-count="pageCount"></router-view>
 </div>
 </template>

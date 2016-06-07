@@ -37,4 +37,9 @@ router.redirect({
   '*': '/'
 })
 
+router.beforeEach( transition => {
+  window.scrollTo( 0, 0 )
+  transition.next()
+})
+
 router.start( App, '#app' )
