@@ -1,12 +1,12 @@
 <template>
 <div class="pagination" v-show="count > 0">
-  <button class="pure-button nav-prev" v-if="current > 1" @click="onPrevButtonClick">Prev</button>
+  <button class="pure-button nav-prev" v-if="current > 1" @click="onPrevButtonClick">上页</button>
   <select v-model="current" @change="onCurrentPageChanged">
     <option v-for="page in pages" :value="page">
     第 {{ page }} 页
     </option>
   </select>
-  <button class="pure-button nav-next" v-if="current < count" @click="onNextButtonClick">Next</button>
+  <button class="pure-button nav-next" v-if="current < count" @click="onNextButtonClick">下页</button>
 </div>
 </template>
 

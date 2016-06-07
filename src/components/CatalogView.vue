@@ -1,8 +1,8 @@
 <template>
 <div class="catalog-view">
-<h2>Catalog</h2>
+<h2>目录</h2>
 <div v-for="item in catalog">
-  <a v-link="$route.path + '/page/' + item.value">{{ item.text }}</a>
+  <a v-link="{ name: 'book.page', params: { book: $route.params.book, page: item.value } }">{{ item.text }}</a>
 </div>
 </div>
 </template>
