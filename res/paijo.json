@@ -2,11 +2,12 @@
   "name": "ぱいじょ",
   "author": "paiza.jp",
   "translator": "exoticknight",
-  "discription": "paiza.jp 连载的四格漫画。讲述入读 paiza 女子学院高等部的 3 人组的学院生活。版权归原作者所有，如有侵权，请联系本人，本人会第一时间删除处理。",
-  "pageCount": 2,
+  "discription": "paiza.jp 连载的四格漫画。讲述入读 paiza 女子学院高等部的 3 人组学习编程的学院生活。版权归原作者所有，如有侵权，请联系本人，本人会第一时间删除处理。",
+  "pageCount": 3,
   "catalog": [
     { "text": "第一话", "value": 1 },
-    { "text": "第二话", "value": 2 }
+    { "text": "第二话", "value": 2 },
+    { "text": "第三话", "value": 3 }
   ],
   "content": [
     {
@@ -35,7 +36,7 @@
             {
               "coords": [304,831,670,1006],
               "text":"friend = 0\nif 遇到初次见面的同级生 then\n    我自动打招呼\n    friend += 1\nend while friend < 10",
-              "boxStyle":
+              "style":
                 {
                   "writing-mode": "lr-tb",
                   "background-color": "black",
@@ -79,7 +80,7 @@
             {
               "coords": [367,815,432,966],
               "text":"哗啦......?",
-              "boxStyle": {
+              "style": {
                 "font-size": "20px"
               }
             },
@@ -90,13 +91,82 @@
             {
               "coords": [246,1175,308,1359],
               "text":"玛格丽特......?",
-              "boxStyle": {
+              "style": {
                 "font-size": "20px"
               }
             },
             {
               "coords": [14,1210,131,1495],
               "text":"这孩子\n自制PC的名字————!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pics": [
+        {
+          "title": "程序员的三大美德",
+          "path": "https://i.imgur.com/941QsIU.png",
+          "alt": "3",
+          "style": {
+            "padding": "10px",
+            "font-size": "22px"
+          },
+          "areas": [
+            {
+              "coords": [665,147,793,354],
+              "text": "自己组装PC!?\n好厉害!!"
+            },
+            {
+              "coords": [85,114,177,349],
+              "text": "啊\n从小就喜欢……"
+            },
+            {
+              "coords": [21,216,65,401],
+              "text": "一会修理一下吧",
+              "style": {
+                "color": "blue"
+              }
+            },
+            {
+              "coords": [713,463,798,639],
+              "text": "我呢\n叫六村rio"
+            },
+            {
+              "coords": [568,506,725,772],
+              "text": "只是为了解决\n各种麻烦的问题\n才想做工程师"
+            },
+            {
+              "coords": [37,465,111,684],
+              "text":"动机不纯吧"
+            },
+            {
+              "coords": [99,641,181,770],
+              "text": "诶嘿嘿"
+            },
+            {
+              "coords": [588,818,794,1124],
+              "text": "啊啦\n并没有那回事哦\n程序员的三大美德是\n懒惰·急躁·傲慢\n有这么一个说法呢"
+            },
+            {
+              "coords": [13,815,485,900],
+              "text":"程序员的三大美德\n1.懒惰 2.急躁 3.傲慢",
+              "style": {
+                "writing-mode": "lr-tb"
+              }
+            },
+            {
+              "coords": [709,1175,781,1391],
+              "text": "不知道食欲能不能\n加到美德里面去呢"
+            },
+            {
+              "coords": [445,1165,500,1355],
+              "text": "加不进去"
+            },
+            {
+              "coords": [5,1170,206,1376],
+              "text": "rio酱\n在四个格子里面\n就吃了\n团子\n冰淇淋\n烤鸡\n烤肠……"
             }
           ]
         }
