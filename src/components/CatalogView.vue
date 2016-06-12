@@ -1,9 +1,10 @@
 <template>
 <div class="catalog-view">
 <h2>目录</h2>
-<div v-for="item in catalog">
+<div v-for="item in catalog" v-if="!$loadingAsyncData">
   <a v-link="{ name: 'book.page', params: { book: $route.params.book, page: item.value } }">{{ item.text }}</a>
 </div>
+<div v-if="$loadingAsyncData" class="loading">Loading...</div>
 </div>
 </template>
 

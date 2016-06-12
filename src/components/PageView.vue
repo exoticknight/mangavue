@@ -5,7 +5,9 @@
     <div v-for="pic in content.pics">
       <h1 class="image-title">{{ pic.title }}</h1>
       <div class="image-content">
-        <img :src="pic.path" alt="{{ pic.alt }}">
+        <img
+          :src="pic.path"
+          alt="{{ pic.alt }}">
         <div class="translation-wrapper"
           v-for="area in pic.areas"
           v-bind:class="{ 'show-all': isShowAll }"
@@ -13,7 +15,7 @@
           <div
             class="translation-content"
             v-bind:style="area.style">
-            <p v-for="t in area.text.split('\n')">{{{ t | toHTML }}}</p>
+            <p v-for="t in area.text.split('\n')">{{{ t | transformSpace | escape }}}</p>
           </div>
         </div>
       </div>
@@ -49,44 +51,20 @@
  */
 import Vue from 'vue'
 import Pagination from './Pagination.vue'
-import {router} from '../main.js'
+import { router } from '../main.js'
 import store from '../store'
 
-Vue.filter( 'toHTML', function ( value ) {
-  return value.replace( /\s/g, '&nbsp;' );
+import { transformPageContent } from '../utils.js'
+
+Vue.filter( 'transformSpace', function ( value ) {
+  return value.replace( /\s/g, '&nbsp;' )
 })
 
-function transformContent ( content ) {
-  return {
-    pics: content.pics.map( ( pic ) => {
-      return Object.assign(
-        {},
-        pic,
-        {
-          'areas': pic.areas.map( ( area ) => {
-            return Object.assign(
-              {},
-              area,
-              {
-                'position': {
-                  left: Math.min( area.coords[0], area.coords[2] ) + 'px',
-                  top: Math.min( area.coords[1], area.coords[3] ) + 'px',
-                  width: Math.abs( area.coords[2] - area.coords[0] ) + 'px',
-                  height: Math.abs( area.coords[3] - area.coords[1] ) + 'px'
-                },
-                'style': Object.assign(
-                  {},
-                  pic.style,
-                  area.boxStyle
-                )
-              }
-            )
-          })
-        }
-      )
-    })
-  }
-}
+Vue.filter( 'escape', function ( value ) {
+  const txt = document.createElement( 'textarea' )
+  txt.innerHTML = value
+  return txt.value
+})
 
 export default {
 
@@ -118,7 +96,7 @@ export default {
         .then( page => {
           return {
             current: pageNumber,
-            content: transformContent( page )
+            content: transformPageContent( page )
           }
         })
     }
