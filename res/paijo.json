@@ -3,12 +3,13 @@
   "author": "paiza.jp",
   "translator": "exoticknight",
   "discription": "paiza.jp 连载的四格漫画。讲述入读 paiza 女子学院高等部的 3 人组学习编程的学院生活。版权归原作者所有，如有侵权，请联系本人，本人会第一时间删除处理。",
-  "pageCount": 4,
+  "pageCount": 5,
   "catalog": [
     { "text": "第一话", "value": 1 },
     { "text": "第二话", "value": 2 },
     { "text": "第三话", "value": 3 },
-    { "text": "第四话", "value": 4 }
+    { "text": "第四话", "value": 4 },
+    { "text": "第五话", "value": 5 }
   ],
   "content": [
     {
@@ -233,6 +234,74 @@
             {
               "coords": [7,1190,150,1490],
               "text": "啊\n这人\n是个非常危险分子"
+            }
+          ]
+        }
+      ]
+    },
+        {
+      "pics": [
+        {
+          "title": "无意义的系统化",
+          "path": "https://i.imgur.com/utmBYcn.png",
+          "alt": "5",
+          "style": {
+            "padding": "15px",
+            "font-size": "25px"
+          },
+          "areas": [
+            {
+              "coords": [714,107,850,376],
+              "text": "哈～\n从明天开始\n终于开始上学了～"
+            },
+            {
+              "coords": [14,78,152,339],
+              "text": "太紧张了\n睡不着……\n要不来数羊吧……"
+            },
+            {
+              "coords": [246,250,497,372],
+              "text": "扑通扑通",
+              "style": {
+                "writing-mode": "lr-tb",
+                "color": "red",
+                "font-size": "30px"
+              }
+            },
+            {
+              "coords": [758,491,851,718],
+              "text": "一只羊…\n两只羊……"
+            },
+            {
+              "coords": [11,481,115,761],
+              "text": "一只一只地数\n没什么效率啊……"
+            },
+            {
+              "coords": [737,849,843,1114],
+              "text": "来写个数羊的程序吧"
+            },
+            {
+              "coords": [775,1232,850,1382],
+              "text": "然后",
+              "style": {
+                "font-size": "30px"
+              }
+            },
+            {
+              "coords": [520,1235,738,1333],
+              "text": "因为蓝光更加睡不着了",
+              "style": {
+                "writing-mode": "lr-tb",
+                "color": "blue",
+                "font-size": "20px"
+              }
+            },
+            {
+              "coords": [117,1227,227,1404],
+              "text": "程序\n是写好了"
+            },
+            {
+              "coords": [21,1415,112,1560],
+              "text": "一点意义\n都没有"
             }
           ]
         }
